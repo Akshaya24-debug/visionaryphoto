@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css"  href="mediaquery.css">
         <style>
             *{
                font-family: Arial;
@@ -47,6 +48,7 @@
                 text-decoration: none;  
                 color:black;
                 font-weight: bold;
+                width:50%;
             }
             a{text-decoration: none;}
             .menus a:hover{
@@ -61,7 +63,7 @@
                 margin-top: 0;
                 color:black;
                 background-color: white;
-                height:100px;
+                height:150px;
                 width:1500px;
             }
             .gridimages{
@@ -83,9 +85,9 @@
                 padding-left: 80px;
                 font-weight: bold;
             }
-            .AboutmeFolio{
-            padding-left: 7%;
-            }
+            /* .AboutmeFolio{
+            padding-left: 5%;
+            } */
             #p1{
                 width:200px;
                 height:200px;
@@ -106,6 +108,7 @@
                 padding-left:60px;
 
             }
+           
 /*icons using font-awesome*/
 .fa {
   font-size: 30px;
@@ -136,6 +139,7 @@
   color: white;
 }
 /*******************************/
+
         </style>
         <body style="background-color:black;color:white">
         <div class="menu">
@@ -280,13 +284,13 @@
                     </div>
                 </div>
             </div>
-        </div><h5 style="padding-left: 5%;">Contact Us @<a class="text-info"style="cursor:pointer">www.akshayavisionaries.com</a></h5><br>
+        </div><h5 style="padding-left: 5%;">Contact Us @<a class="text-info"style="cursor:pointer" id="con">www.akshayavisionaries.com</a></h5><br>
         <div  class="footer" style="background-color: white;width:1500px;height:60px">
             <div class="row" style="background-color: white;width:100%;height:60px">
                 <div class="col-md-4"><br>
                     <h6 class="text-secondary font-weight-bold">Designed by Akshaya Devi Maheswaran&REG;</h6>
                 </div>
-                <div class="col-md-8"><br>
+                <div class="col-md-8" id="a"><br>
                        
                         <a name="contact" href="https://www.facebook.com"  target="_parent" class="fa fa-facebook "></a>
                         <a name="contact" href="https://www.youtube.com/" target="_parent" class="fa fa-youtube"></a>
