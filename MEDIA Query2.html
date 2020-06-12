@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query Sample</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* *{
+                text-align: center;
+            } */
+            .content1{
+                color:blue;
+                float:left;
+            }
+            .content2{
+                color:red;
+                float:left;
+            }
+            .content3{
+                color:green;
+                float: left;
+            }
+            .content4{
+                color:hotpink;
+                float: left;
+            }
+            .content5{ 
+                color:indigo;
+                float:left;
+            }
+            .content6{
+                color:lawngreen;
+                float:left;
+            }
+            .content7{
+                color:lightseagreen;
+                float:left;
+            }
+            .content8{
+                color:magenta;
+                float: left;
+            }
+            #images{
+                width:300px;
+            }
+            /* @media screen and(max-width:600px){
+                .content1,.content2,.content3,.content4.content5,.content6,.content7,.content8{
+                    width:100%;
+                }
+                #images{
+                    width:100%;
+                }
+            } */
+            @media(max-width:700px) and (min-width:992px){
+                .content1,.content2,.content3,.content4.content5,.content6,.content7,.content8{
+                    width:100%;
+                }
+                *{
+                    width:100%;
+                }
+                #images{
+                    width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content1">
+            <img id="images" src="VijayD.JPG" alt="VD">
+            <p>Content1:VijayDevarakonda</p>
+        </div>
+        <div class="content2">
+            <img  id="images" src="VijayD.JPG" alt="VD">
+            <p>Content2:VijayDevarakonda</p>
+        </div>
+        <div class="content3">
+            <img  id="images" src="VijayD.JPG" alt="VD">
+            <p>Content3:VijayDevarakonda</p>
+        </div>
+        <div class="content4">
+            <img  id="images" src="VijayD.JPG" alt="VD">
+            <p>Content4:VijayDevarakonda</p>
+        </div>
+        <div class="content5">
+            <img  id="images" src="VijayD.JPG" alt="VD">
+            <p>Content5:VijayDevarakonda</p>
+        </div>
+        <div class="content6">
+            <img id="images" src="VijayD.JPG" alt="VD">
+            <p>Content6:VijayDevarkonda</p>
+        </div>
+        <div class="content7">
+            <img id="images" src="VijayD.JPG" alt="VD">
+            <p>Content7:VijayDevarkonda</p>
+        </div>
+        <div class="content8">
+            <img id="images" src="VijayD.JPG" alt="VD">
+            <p>Content8:VijayDevarkonda</p>
+        </div>
+    </body>
+</html>
