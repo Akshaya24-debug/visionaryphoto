@@ -1,0 +1,247 @@
+.footer2,.footer3,.footer4{
+    margin-left: 30px;
+}  
+@media (max-width:600px)  {
+   .title{
+       display:flex;
+       flex-flow:column;
+   }
+   .mail{
+       display:flex;
+       order:1;
+       margin-top: 20px;
+   }
+   .contact{
+       position: relative;
+       right:10pc;
+   }
+   .socialmed{
+    position: relative;
+    right:28pc;
+    margin-top: 20px;
+    display:flex;
+   }
+   .logo{
+       padding:5%;
+   }
+   .logo img{
+       margin-top: 25px;
+       padding-left: 40px;
+   }
+   .searchtab{
+    position: relative;
+    right:32pc;
+    margin-top: 10px; 
+    display:flex;
+    overflow: visible;
+   }
+   .tab a{
+       margin-top: 10px;
+   }
+   .plant{
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .cont{
+       display:flex;
+       flex-wrap: wrap;
+       /* flex-flow: column, wrap; */
+       /* flex-direction: column; */
+   }
+   .sellers{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+   }
+   .health{
+    display:flex;
+    flex-wrap: wrap;
+   }
+   .image img{
+       width:100%;
+       margin-top:10px;
+   }
+   #order1{
+       margin-top: 25px;
+       position: relative;  
+       right:0.5pc;
+   }
+   .transparenttext{
+       position: relative;;
+       right:2pc;
+       margin-top:310pc;
+       width:300px;
+       height:10pc;     
+   }
+   .footer{
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+   }
+   .footer1{
+       margin-left: 35px;
+   }
+}
+@media (max-width:400px){
+        .title{
+            display:flex;
+            flex-flow:column;
+        }
+        .mail{
+            display:flex;
+            order:1;
+            margin-top: 20px;
+        }
+        .contact{
+            position: relative;
+            right:10pc;
+        }
+        .socialmed{
+         position: relative;
+         right:28pc;
+         margin-top: 20px;
+         display:flex;
+        }
+        .logo{
+            padding:5%;
+        }
+        .logo img{
+            margin-top: 25px;
+            padding-left: 40px;
+        }
+        .searchtab{
+         position: relative;
+         right:32pc;
+         margin-top: 10px; 
+         display:flex;
+        }
+        .tab a{
+            margin-top: 10px;
+        }
+        .plant{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cont{
+            display:flex;
+            flex-wrap: wrap;
+            /* flex-flow: column, wrap; */
+            /* flex-direction: column; */
+        }
+        .sellers{
+         display:flex;
+         flex-direction: column;
+         align-items: center; 
+        }
+        .health{
+         display:flex;
+         flex-wrap: wrap;
+        }
+        .image img{
+            width:100%;
+            margin-top:10px;
+        }
+        #order1{
+            margin-top: 25px;
+            position: relative;  
+            right:0.5pc;
+        }
+        .transparenttext{
+            position: relative;
+            right:1pc;
+            margin-top:288.5pc;
+            width:300px;
+            height:10pc;     
+        }
+        .footer{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .footer1{
+            margin-left: 35px;
+        }
+    }
+    @media (max-width:600px) and (min-width:300px){
+        .title{
+            display:flex;
+            flex-flow:column;
+        }
+        .mail{
+            display:flex;
+            order:1;
+            margin-top: 20px;
+        }
+        .contact{
+            position: relative;
+            right:10pc;
+        }
+        .socialmed{
+         position: relative;
+         right:28pc;
+         margin-top: 20px;
+         display:flex;
+        }
+        .logo{
+            padding:5%;
+        }
+        .logo img{
+            margin-top: 25px;
+            padding-left: 40px;
+        }
+        .searchtab{
+         position: relative;
+         right:32pc;
+         margin-top: 10px; 
+         display:flex;
+        }
+        .tab a{
+            margin-top: 10px;
+        }
+        .plant{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cont{
+            display:flex;
+            flex-wrap: wrap;
+            /* flex-flow: column, wrap; */
+            /* flex-direction: column; */
+        }
+        .sellers{
+         display:flex;
+         flex-direction: column;
+         align-items: center; 
+        }
+        .health{
+         display:flex;
+         flex-wrap: wrap;
+        }
+        .image img{
+            width:100%;
+            margin-top:10px;
+        }
+        #order1{
+            margin-top: 25px;
+            position: relative;  
+            right:0.5pc;
+        }
+        .transparenttext{
+            position: relative;;
+            right:1pc;
+            margin-top:288.5pc;
+            width:300px;
+            height:10pc;     
+        }
+        .footer{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .footer1{
+            margin-left: 35px;
+        }
+    }
