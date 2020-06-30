@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyPhotography</title>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap min css-->
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="mediaquery.css"> -->
+      <style>
+            *{
+               font-family: Arial;
+               width:100%;   
+            }
+            code{
+                color:darkmagenta;
+                font-weight: bold;
+                font-size: 50px;
+            }
+            code1{
+                color:darkmagenta;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .title{
+                width:50%;
+                float:left;
+                
+
+            }
+            #small{
+                position:relative;
+                bottom:20;
+            }
+            .menus::after{
+                display: table;
+                content:"";
+                padding-top: 10px;
+            }
+            .menus a {
+                margin-top: 20px;
+                padding:2%;
+                text-decoration: none;  
+                color:black;
+                font-weight: bold;
+                width:50%;
+            }
+            a{text-decoration: none;}
+            .menus a:hover{
+                background-color: darkmagenta;
+                color:white;
+            }
+            .red{
+                background-color:darkmagenta;
+            }
+            .menu{
+                padding-left: 50px;
+                margin-top: 0;
+                color:black;
+                background-color: white;
+                height:110px;
+                /* width:1500px; */
+                width:100%;
+            }
+            .gridimages{
+                margin-top: 50px;
+                padding-left:40px;
+                width:100%;
+            }
+            .welcome{
+                padding-left:80px;
+                margin-top:80px;
+            }
+            .serv{
+                color:white;
+                background-color:darkmagenta;
+                font-style: italic;
+                border: 2px solid darkmagenta;
+                width:100px;
+                border-radius:2pc;
+            }
+            .serv:hover{
+                color:darkmagenta;
+                background-color: white;
+            }
+            .Services{
+                padding-left: 80px;
+                font-weight: bold;
+            }
+            #p1{
+                width:200px;
+                height:200px;
+                border:2px solid white;  
+            } 
+            #p2{
+                width:200px;
+                height:200px;
+                border:2px solid white;  
+            }
+            #p3{
+                width:200px;
+                height:200px;
+                border:2px solid white;  
+            }
+            .footer{
+                width:100%;
+                /* height:100px; */
+            }         
+    /*icons using font-awesome*/
+    .fa {
+    font-size: 30px;
+    width: 30px;
+    border-radius: 20%;
+    text-align: center;
+    margin-left:30px;
+    }
+    .fa:hover {
+    opacity: 0.7;
+    }
+    .fa-facebook {
+    background:darkmagenta;
+    color: white;
+    }
+    .fa-youtube {
+    background:darkmagenta;
+    color: white;
+    }
+    .fa-instagram {
+    background:darkmagenta;
+    color: white;
+    }
+    .fa-pinterest {
+     background:darkmagenta;
+     color: white;
+    }
+/*******************************/
+</style>
+<body style="background-color:black;color:white">
+        <div class="container">
+        <div class="menu">
+            <div class="title">
+                <h1><code>A</code>kshaya's&nbsp;<code>V</code>isionaries</h1><small id="small">Photography</small>
+            </div>
+            <div class="menus">
+                <br>
+                <a href="#about"class="red" class="active" style="color:white">About</a>
+                <a  href="#services">Services</a>
+                <a href="#folio">Folio</a>
+                <a href="#welcome">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div><br>
+        <div class="container gridimages text-center">
+            <div class="row">
+                <div class="col-sm-2"><img  src="b1.jpg" alt="img1" width="500" height="500"></div>
+                <div class="col-sm-2"><img  src="b3.jpg" alt="img1" width="500" height="500"></div>
+                <div class="col-sm-2" ><img  src="b2.jpg" alt="img1" width="500" height="500"></div>
+                <div class="col-sm-2" ><img  src="b4.jpg" alt="img1" width="500" height="500"></div>
+                <div class="col-sm-2"><img  src="b5.jpg" alt="img1" width="500" height="500"></div>
+                <div class="col-sm-2"><img  src="b3.jpg" alt="img1" width="500" height="500"></div>  
+          </div>
+        </div><br>
+        <div class="welcome">
+               <div class="row">
+                   <div class="col-md-3">
+                       <h1><code>W</code>elcome!</h1>
+                   </div>
+                   <div class="col-lg-8">
+                        <p><code1>Click Here&nbsp;&nbsp;</code1><a name="welcome"></a>for more info about this photography page.Explore the roots of categories via our clicks and Services.We came around the sun on 2019.Hope we will improve our features for the user's emphasize in various categories like Travel,Food,Wedding,Wildlife etc., </p>
+                   </div>
+               </div>
+        </div><br>
+        <div class="Services"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 id="h2tag">Fashion<a name="services"></a></h2><br>
+                    <img src="Fashion.jpeg" width="300" height="300"><br><br>
+                    <i>
+                    <strong>#FashionkiJalwa</strong>
+                    <p> A Fashion with passion arises attitude!We offer photoshoots at different attires and ambiences.</p></i><br><br>
+                    <button  width="150px" height="50px" class="serv" onclick="readMore()">Read More</button>
+                </div>
+                <div class="col-md-3">
+                    <h2 id="h2tag">Nature</h2><br>
+                    <img src="Nature.jpg" width="300" height="300"><br><br>
+                    <i>
+                    <strong>#BlisstoNaturalhears</strong>
+                    <p>We provide module offers at different locations with variances theme.</p></i><br><br>
+                    <button  width="150px" height="50px" class="serv" onclick="readMore()">Read More</button>
+                </div>
+                <div class="col-md-3">
+                    <h2 id="h2tag">Wedding</h2><br>
+                    <img src="Wedding.jpg" width="300" height="300"><br><br>
+                    <i>
+                    <strong>#SnapsJustMarried</strong>
+                    <p>Oh Ringing Bells!How can it be expressed without clicks.HDD,Hovers,Pre and Post shoots available with flat 30% offers.</p></i><br>
+                    <button  width="150px" height="50px" class="serv" onclick="readMore()">Read More</button>
+                </div>
+                <div class="col-md-3">
+                    <h2 id="h2tag">Travel</h2><br>
+                    <img src="travel.jpeg" width="400" height="300"><br><br>
+                    <i>
+                    <strong>#ARoadtoParadise</strong>
+                    <p>Travel to desired dream palaces with photo packages and theme light-out effects.</p></i><br><br>
+                    <button  width="150px" height="50px" class="serv" onclick="readMore()">Read More</button>
+                </div>
+            </div><br>
+        </div><br>
+        <script>
+            function readMore(){
+                alert("To Enquire about more details go to http://AVisionaries.org");
+            }
+        </script>
+        <div class="AboutmeFolio">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1><a name="about">Shortly AboutMe</a></h1><br><br> 
+                    <div class="row" >
+                        <div class="col-md-6">
+                            <img src="about.jpg" width="300px" height="500px" style="border:2px solid white">
+                        </div><br> 
+                        <div class="col-md-6" id="content">
+                            <strong ><i>We offer various services in accordance with customer's need and heed for your dream effect to come true.</i></strong>
+                            <br><br><p style="font-size: small;">We are striving over past years with new eqipped galvanizing focuses on each launches.Some of the services includes.</p>
+                            <div class="row">
+                                <div class="col-md-6" style="color:darkmagenta;font-size: large;font-style:italic"><br>
+                                    <ul>
+                                        <li>Fashion</li>
+                                        <li>Public events</li>
+                                        <li>Arts and Design</li>
+                                        <li>Travels</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6" style="color:darkmagenta;font-size: large;font-style:italic"><br>
+                                    <ul>
+                                        <li>Weddings</li>
+                                        <li>Party</li>
+                                        <li>Validictories</li>
+                                        <li>Food Fests</li>
+                                        <li>Business Events</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 id="content"><a name="folio">Latest Photoshoots</a></h1><br>
+                    <div class="pics">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="mod1.jpeg" id="p1" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod2.jpg" id="p2" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod 3.jpg" id="p3"class="photos" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="mod 4.jpg" id="p1" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod5.jpeg" id="p2" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod6.jpg" id="p3"class="photos" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="mod7.jpg" id="p1" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod8.jpg" id="p2" class="photos">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="mod9.jpeg" id="p3"class="photos" >
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="htag text-white">
+        <h5 style="padding-left: 5%;"id="con2" >Contact Us @<a class="text-secondary"style="cursor:pointer" id="con2">www.akshayavisionaries.com</a></h5><br>
+        </div>
+        <div  class=" container footer" style="background-color: white;;height:130px"><br>
+                <div class="text"><br>
+                    <h6 class="text-secondary font-weight-bold" id="foot">Designed by Akshaya Devi Maheswaran&REG;</h6>
+                </div>
+                <div class="social" > <br> 
+                        <a name="contact"   href="https://www.facebook.com"  target="_parent" class="fa fa-facebook " style="overflow: visible;"></a>
+                        <a name="contact"   href="https://www.youtube.com/" target="_parent" class="fa fa-youtube" style="overflow: visible;"></a>
+                        <a  name="contact" " href="https://www.instagram.com/"  target="_parent" class="fa fa-instagram" style="overflow: visible;"></a>  
+                </div>
+        </div>
+    </div>
+    <style>
+        @media(max-width:500px){
+            .menu{
+                padding:2%;
+                height:180px;
+            }
+            .title{
+                width:100%;
+                
+            }
+            *{
+                width:100%;
+            }
+            #htag{
+                font-size: 16px;
+            }
+            .menus{
+                padding-top:100px;
+                
+            }
+            .gridimages
+            {
+                width:100%;
+                display:flex;
+                flex-wrap:nowrap;
+                justify-content: center;    
+            }
+           .AboutmeFolio img
+           {
+            width:300px;
+            }
+            .AboutmeFolio
+            {
+             margin-left: 50px;
+            margin-top: 5pc;
+            }
+            #p1,#p2,#p3
+            {
+            margin-left:80px;
+            }
+            #con
+            {
+            margin-left:100px;
+            }
+            .Services #h2tag{
+                margin-top: 5pc;
+            }
+            .welcome, .Services,.AboutmeFolio
+            {
+                width:380px;
+                display:flex;
+                flex-wrap:nowrap;
+            /* justify-content: center; */
+            }
+            .htag{
+                margin-top:2pc;
+            }
+            #con2{
+                font-size: 18px;
+                text-align: center;
+            }
+            .serv
+            {
+                width:80px;
+                border-radius:0px;
+            }
+            .serv:hover
+            {
+                width:80px;
+                cursor: pointer;
+                opacity:0.8;
+            }
+            .pics .photos{
+                width:300px;
+            }
+            #p1,#p2,#p3{
+                position: relative;
+                right:3pc;
+                width:250px;
+                
+            }
+            .footer{
+                height:200px;
+                text-align: center;
+            }
+           
+        }
+</style>
+    </body>
+
+</html>
