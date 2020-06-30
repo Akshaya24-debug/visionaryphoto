@@ -1,4 +1,4 @@
-.footer2,.footer3,.footer4{
+K.footer2,.footer3,.footer4{
     margin-left: 30px;
 }  
 @media screen and (max-width:500px)  {
@@ -155,9 +155,9 @@
         }
         .transparenttext{
             position: relative;
-            margin-top:320pc;
+            margin-top:310pc;
             font-size: 24px;
-            max-width: 330px;
+            max-width: 250px;
                 
         }
         .footer{
