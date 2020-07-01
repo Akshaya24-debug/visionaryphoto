@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ISPACE FURNITURE LOGIN</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <style>
+          *{
+              box-sizing: border-box;
+              overflow: hidden;
+          }
+          marquee{
+              margin-top:5pc;
+              margin-bottom: 2pc;
+          }
+          .img{
+              background-image: url("sofa7.jpg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover; 
+              position: relative;
+              vertical-align: middle;
+              height: 400px;
+              width:100%;
+          }
+          .container{
+              background-color: white;
+              position: absolute;
+              width:250px;
+              margin:30px;
+              transform: translate(20%, 30%);   
+          }
+          #em1,#pass1{
+              background-color:white;
+              color:limegreen;
+              border: limegreen;
+              
+          }
+           #em1:focus,#pass1:focus{
+               background-color:#ddd;
+               border: limegreen;
+               color: limegreen;
+           }
+          .btn{
+              border-radius:0;
+              /* -webkit-border-radius: 0 !important;
+             -moz-border-radius: 0 !important; */
+              margin-top:20px;
+              margin-left: 20px;
+              width:150px;
+          }
+          @media screen and(max-width:400px){
+              *{
+                  width:100%;
+              }
+              .img{
+                  background-repeat: no-repeat;
+                  width:200px;
+                  display: inline-block; /* Make the width of box same as image */
+              }
+              .container{
+                position: relative;
+                min-width:220px;
+                display: inline-block; /* Make the width of box same as image */
+                right:400pc;
+                
+                  
+              }
+          }
+
+        </style>
+    </head>
+    <body>
+        <marquee><h2 style="font-family: cursive;color:limegreen">Welcome to ISPACE FURNITURE</h2></marquee>
+         <div class="img">
+             <form action="" class="container">
+                 <h5><i>Click here to Login</i></h5>
+                 <label style="font-weight: bold;">Email</label>
+                 <input id="em1"  type="text" placeholder="Enter your email" name="email" required>
+                 <label style="font-weight:bold">Password</label> 
+                 <input id="pass1" type="password"  placeholder="Enter your password" name="password" required>
+                 <button type="submit" onclick="onSubmit()" class="btn btn-success">Login</button><br><br>
+                 <p id="para"  style="font-style: italic;font-weight: bolder;color:red"></p> 
+            </form>
+         </div>
+         <script>
+                function onSubmit()
+                { 
+                    var a = document.getElementById("em1");
+                    var b =document.getElementById("pass1");
+                    var w = document.getElementById("para");
+                    if(a.value =="akshaya" && b.value == "123") 
+                    {         
+                                alert("login successful.....");
+                                // window.location.href = "sampletext.html";
+                                 // window.location.replace("sampletext.html");
+                                  // window.location.assign("sampletext.html");
+                   }
+                   else{
+                        w.innerHTML="Invalid Details!";     
+                   }
+                  
+                }
+        </script>         
+        
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
