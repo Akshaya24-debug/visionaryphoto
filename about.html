@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AboutUsPage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <style>
+             *{
+                font-family:Bahnschrift;
+                box-sizing: border-box;
+            }
+            body{
+                overflow-x: hidden;
+            }
+         
+            .title{
+                margin-top: 3pc;
+                padding-left:10pc;
+                
+            }
+            .title a{
+                text-decoration: none;
+                font-size:20px;
+                padding:50px;
+                color:black;   
+            }
+            .imageclass{
+                    margin-top: 2pc;
+                    max-width:100%;
+                }
+
+            .active{
+                color:white;
+                background-color: yellowgreen;
+                border:2px solid yellowgreen;
+            }
+
+            .title a:hover{
+                color:white;
+                background-color: yellowgreen;
+                border:2px solid yellowgreen;
+            }
+            @media screen and (max-width:399px){
+                .title{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    right:30px;
+                }
+                .title a{
+                    padding:0px;
+                    text-decoration: none;
+                    color:black;
+                    display:flex;
+                    flex-wrap: wrap;
+                    width:100px;  
+                }
+                .title a:hover{
+                    width:100px;
+                }
+                .imageclass{
+                    margin-top: 2pc;
+                    min-width:100%;
+                }
+            }
+            @media screen and (min-width:400px) and (max-width:599px){
+                   .title a{
+                       padding:0px;
+                       display:flex;
+                   }
+            } 
+            @media screen and (min-width:600px) and (max-width:699px) {
+                    .title a{
+                        padding:0px;
+                        display:flex;
+                    }
+            } 
+           @media screen and (min-width:700px) and (max-width:999px){ 
+                .title a{
+                    display:flex;
+                    padding:0px;
+                }
+            }  
+            @media screen and (min-width:1000px) and (max-width:1200px){
+                .title a{
+                    padding:30px;
+                    margin-top: 3pc;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+       <div class="container-fluid title">
+                    <a href="home.html" >HOME</a>
+                    <a href="about.html" class="active text-white">ABOUTUS</a>
+                    <a href="products.html" >PRODUCTS</a>
+                    <a href="services.html" >SERVICES</a>
+                    <a href="contact.html">CONTACT</a>
+       </div>
+       <h1 style="text-align: center;margin-top:5pc"><code style="color:greenyellow;font-size: 50px;font-weight: bolder;">|</code><strong style="font-size: 60px;">space</strong></h1>
+       <br><div class="container"><hr></div><br>
+       <div class="container abouttext">
+           <div class="row">
+               <div class="col-md-6">
+                    <h2><strong>About Us</strong></h2><br>
+                    <h3 style="color:rgb(128, 114, 114)">Loreum Ipsum Is Commonly a Dummy Text used in the graphic, print, and mockups.</h3>
+                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    <p>The French lettering company Letraset manufactured a set of dry-transfer sheets which included the lorem ipsum filler text in a variety of fonts, sizes, and layouts. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use.</p>
+                    <button onclick="Click()" style="padding:4%;font-style: italic;background-color:rgb(87, 67, 67);border:white;color: white;cursor:pointer">ReadMore</button><br>
+               </div>
+               <div class="col-md-6">
+                    <img src="lamp.jpg" alt="feature" width="500px" class="imageclass">
+               </div>
+           </div><br>
+           <div style="min-width: 100%;">
+               <p>So when is it okay to use lorem ipsum? First, lorem ipsum works well for staging. It's like the props in a furniture store—filler text makes it look like someone is home. The same Wordpress template might eventually be home to a fitness blog, a photography website, or the online journal of a cupcake fanatic. Lorem ipsum helps them imagine what the lived-in website might look like. </p>
+               <p>Second, use lorem ipsum if you think the placeholder text will be too distracting. For specific projects, collaboration between copywriters and designers may be best, however, like Karen McGrane said, draft copy has a way of turning any meeting about layout decisions into a discussion about word choice. So don't be afraid to use lorem ipsum to keep everyone focused. </p>
+               <p>One word of caution: make sure your client knows that lorem ipsum is filler text. You don't want them wondering why you filled their website with a foreign language, and you certainly don't want anyone prematurely publishing it. </p>
+               <button onclick="Click()" style="padding:2%;font-style: italic;background-color:rgb(87, 67, 67);border:white;color: white;cursor:pointer">ReadMore</button><br>
+            </div>
+       </div>
+       <script>
+        function Click(){
+            alert("For more info login to:info@ispace.org");
+        }
+       </script>
+       <br><div class="container"><hr></div><br>
+       <div class="container brand">
+        <div class="row">
+            <div class="col-md-1" style="background-color:yellowgreen;color:whitesmoke;height:129px">
+                <h1 style="font-size:65px;font-weight:bolder;background-color:yellowgreen;color:whitesmoke">15</h1>
+            </div>
+            <div class="col-md-5" style="background-color:rgb(87, 67, 67)">
+                 <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:lemonchiffon">LOREUM IPSUM IS SIMPLY TEXT</h3>
+                 <p style="color:whitesmoke">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam.</p>
+            </div>
+            <div class="col-md-1" style="background-color:yellowgreen;color:whitesmoke;height:129px">
+                 <h1 style="font-size:65px;font-weight:bolder;background-color:yellowgreen;color:whitesmoke">$</h1>
+            </div>
+            <div class="col-md-5" style="background-color:rgb(87, 67, 67)">
+                 <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color:lemonchiffon">LOREUM IPSUM IS SIMPLY TEXT</h3>
+                 <p style="color:whitesmoke">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam.</p>
+            </div>   
+         </div>
+     </div>
+     <br><div class="container"><hr></div><br>
+     <!-- footer -->
+     <h1 style="margin-bottom:0;color:gainsboro;display: flex;justify-content: center;letter-spacing: 10px;">DESIGN &copy; AKSHAYA DEVI MAHEWARAN</h1>
+     <!------------>
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
+    </body>
+</html>
