@@ -2,6 +2,10 @@
 @media screen and (max-width:399px){
          body{
              overflow-x: hidden ;
+             scroll-behavior: smooth ;
+         }
+         *{
+             overflow-x: hidden;
          }
          .menuhead{
              display:flex;
