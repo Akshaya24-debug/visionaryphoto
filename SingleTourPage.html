@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <!-- //Bootstrap CSS JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- //Bootstrap Jquery Popper.JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="mediaquerytour.css">
+        <style>
+        /* ************************************************commmon*****************************************************************************/
+            body{
+                overflow-x: hidden;
+            }
+            .openbutton{
+                color:black;
+                background-color: white;
+                font-weight: bolder;
+                font-size:40px;
+                text-decoration: none;
+                border: none;
+            }
+            .openbutton:hover{
+                /* opacity: 0.1; */
+                cursor: pointer;
+                background-color: rgb(34, 33, 33);
+                color:white;
+            }
+            .slidepanel{
+               background-color:yellowgreen;
+               color:black;
+               font-size:20px;
+               font-size: bolder;
+               width: 0;
+              position: fixed;
+              z-index: 1;
+              height: 450px;
+              top: 0;
+              left: 0;
+              padding-top: 60px;
+              overflow-x: hidden;
+              transition: 0.5s;
+            }
+            .slidepanel a {
+                padding: 8px 8px 8px 32px;
+                color:black;
+                display: block;
+                transition: 0.5s;
+                font-family: cursive;
+            }
+            .slidepanel a:hover{
+                background-color: whitesmoke;
+                color:yellowgreen;
+                cursor: pointer;
+                text-decoration: none;
+            }
+             .closebutton{
+                position:absolute;
+                top: 0;
+                right:20px;
+                font-size:26px;
+                color:black;
+            }
+            .getintouch{
+                border:2px solid yellowgreen;
+                width:250px;
+                background-color: white;
+                text-decoration: none;
+                margin-left:300px;
+                padding:20px;
+                font-weight:bolder;
+                font-family: sans-serif;
+                cursor: pointer;
+            }
+            .getintouch:hover{
+                opacity:0.5;
+            }
+           
+            #logo{
+                margin-left:35%;
+                
+            }
+            .menuhead{
+                padding-left:5%;
+                padding-top:25px;
+            }
+            .footer{
+                position: relative;
+                top:45pc;
+                width:100%;
+                background-color:rgb(73, 87, 48);
+            }
+        /*************************************************commmon*****************************************************************************/
+            .horsecontent{
+                position:absolute;
+                top:42%;
+                padding-left: 20%;    
+            } 
+            #booknow{
+                width:150px;
+                height:50px;
+                background-color: yellowgreen;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border:1px solid yellowgreen;
+            }
+            #booknow:hover{
+                color:white;
+                cursor: pointer;
+            }
+            .routes{
+                padding-left: 2%;
+            }
+            .map{
+                position: absolute;
+                margin-left:35%;
+            }
+            .pics{
+                position: absolute;
+                top:1600px;
+               
+            }
+        </style>
+    </head>
+    <body>
+    <!-------------------------------------------------------header--------------------------------------------------------->
+        <div class="menuhead">
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="openbutton" onclick="Openbutton()">☰</button>
+                    <div id="MySlidePanel" class="slidepanel">
+                      <a  href="javascript:void(0)" class="closebutton" onclick="Closebutton()">X</a>
+                      <a  href="HomePage.html">HomePage</a>
+                      <a  href="DestinationPage.html">DestinationPage</a>
+                      <a  href="PrivateToursPage.html">PrivateToursPage</a>
+                      <a  href="SingleTourPage.html">SingleTourPage</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img  id="logo" src="Logo.PNG" alt="Logo" width="300px">
+                </div>
+                <div class="col-md-6">
+                    <button class="getintouch" onclick="getDetails()"><i class='fas fa-phone text-success' style='font-size:26px'></i> &nbsp;GET IN TOUCH</button>
+                </div>
+            </div>
+        </div>
+        <script>
+          function Openbutton(){
+              document.getElementById("MySlidePanel").style.width="250px";
+          }
+          function Closebutton(){
+              document.getElementById("MySlidePanel").style.width="0";
+          }
+        </script>
+        <br><br>
+ <!-------------------------------------------------------header--------------------------------------------------------->    
+       <div class="container-fluid">
+            <!-- <br><br><h1 style="text-align:center">THIS IS A SINGLE TOUR PAGE</h1><br><br>  -->
+       <div class="horseriding">
+           <div class="horseimg">
+               <img src="Horse Riding big.jpg" alt="horserding" width="100%">
+           </div>
+           <div class="horsecontent text-center">
+               <h6 style="font-family: fantasy;font-size: 45px;">HALF DAY</h6>
+               <h1 style="font-size: 70px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Horseback Riding</h1><br>
+               <button id="booknow" onclick="getDetails()">BOOK NOW</button>
+           </div>
+       </div><br><br>
+       <h3 id="htag" style="padding-left:5%;font-size: 48px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Horseback to the mountains of Parasio</h3><br><br>
+       <br><br>
+       <div class="container">
+           <ul class="nav nav-tabs">
+               <li class="nav-item">
+                   <a class="nav-link active bg-success text-white" href="#">Highlights</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link text-success" href="#">Description</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link text-success" href="#">Gallery</a>
+               </li>
+           </ul>
+       </div><br><br>
+       <div class="routes ">
+            <div class="col-sm-4" style="float:left;">
+              <div class="card bg-light">
+                  <div class="text-center bg-light"><strong>ROUTE:</strong>Barahona-Paraiso</div><br>
+                  <div class="card-header bg-light"><i class="material-icons">&#xe192;</i>&nbsp;&nbsp;Horseback riding/Duration:3-4 hours</div>
+                  <div class="card-header bg-light"><i class='fas fa-camera' style='font-size:20px'></i>&nbsp;&nbsp;Panoramic view over the Caribbean Sea</div>
+                  <div class="card-header bg-light"><i class='fas fa-water' style='font-size:20px'></i>&nbsp;&nbsp;Ride through a river</div>
+                  <div class="card-header bg-light"><i class='far fa-flag' style='font-size:20px'></i>&nbsp;&nbsp;Stop at the paprika greenhouse</div>
+                  <div class="subcontent bg-light text-center" style="padding:3%">
+                     <div class="bg-secondary" style="width:80%;margin-left:20px;padding:5%">
+                      <button class="bg-success text-white ">$60</button><strong>per adult</strong><br>
+                      <p>Guaranteed departures<br> from 2 adults on</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 map">
+               <img src="SingleTourPage Map.PNG" width="100%">
+            </div>
+    </div><br><br><br><br><br>
+    <div class="pics">
+       <div class="row">
+           <div class="col-sm-4">
+               <img src="horserid1.png" width="100%" height="550">
+           </div>
+           <div class="col-sm-4">
+            <img src="horserid2.jpg" width="100%"  height="550">
+        </div>
+        <div class="col-sm-4">
+            <img src="horserid3.jpg" width="100%" height="550">
+        </div>
+       </div>
+    </div><br>
+    <div class="buttonbook">
+       <button id="booknow"  onclick="getDetails()" style="position: relative; top:850px;margin-left: 100px;" >BOOK NOW</button><br><br><br><br><br><br>  
+    </div><br><br>
+<!----footerpage----------------------------------------------------------------------------------------------------->
+    <div class="footer text-white"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="Logomini.PNG" width="200px">
+                    <p class="font-weight-smaller">Ecotour Barahona is your favourite specialist for authentic,unique and memorable round tips,day trips and activities in Southwest of Domician Republic.</p><br>
+                    <img src="Dominic Republic.PNG" width="200px">
+                    <p>Travel environmentally friendly with us and discover the main destinations of the  main destinations of the Dominician Republic.</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">ABOUT US</strong><br><br>
+                    <p>ABOUT ECOTOUR</p>
+                    <p>BARAHOMA</p>
+                    <p>OUR TEAM</p>
+                    <p>GUEST BOOK</p>
+                </div>
+                <div class="col-md-3">
+                    <strong style="color:yellowgreen;font-size:16px">CUSTOMER SERVICE</strong><br><br>
+                    <p>BOOKINGS CONDITIONS</p>
+                    <p>CONTACT-US</p>
+                    <p>FAQ's</p>
+                    <p>LEGAL NOICE</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">RESERVATIONS & BOOKINGS</strong><br><br>
+                    <p class="font-size-small">MONDAY TO FRIDAY</p>
+                    <p class="font-size-small">From 8.00am to 8.00pm</p>
+                    <p class="font-size-small">SATURDAY TO SUNDAY</p>
+                    <p class="font-size-small">From 9.00am to 5.00 pm</p>
+                    <p class="font-size-small">Atlantic Standard Time</p>
+                    <p>+1 (809) 856 2260</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">FOLLOW US</strong><br><br>
+                    <i class='fab fa-facebook-f text-white' style='font-size:20px'></i>
+                    <i class='fab fa-instagram text-white' style='font-size:20px'></i>
+                    <i class='fab fa-weebly text-white' style='font-size:20px'></i>
+                </div>
+            </div><br><br>
+            <div class="endtext text-center font-weight-large text-white">
+                    <h4>DESIGN &copy; AKSHAYA DEVI MAHESWARAN</h4>
+            </div>
+        </div>
+        <script>
+            function getDetails(){
+                alert("For more details contact:info@tour.com");
+            }
+        </script>
+<!----footerpage----------------------------------------------------------------------------------------------------->
+    </div>
+     </body>
+</html>
