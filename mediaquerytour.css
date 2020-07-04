@@ -1,0 +1,52 @@
+/* Distination Page */
+@media screen and (max-width:399px){
+         body{
+             overflow-x: hidden ;
+         }
+         .menuhead{
+             display:flex;
+             padding:0em;
+         } 
+          .openbutton{
+              margin-left: 10pc;
+          }
+         #logo{
+              position: relative;
+              right: 30%;    
+          }
+          .getintouch{
+            position: relative;
+            right: 45%;
+            overflow: visible;
+            top: 2%;
+            width:200px;
+          }
+
+          .titletext{
+              position: fixed;
+              margin-top: 8pc;
+          }
+          .boatcontent{
+              position: relative;
+              margin-top: 90pc;
+              max-width:300px;    
+          }
+          .boatcontent h2{
+            font-size:16px;  
+          }
+          .calendar{
+              margin-top:32pc;
+          }
+          #cal{
+             position: relative;
+             right:30%;   
+             text-align: center;
+          }
+          .welcomecontent{
+              position: relative;
+              margin-top: 115pc;
+              max-width:350px;
+              right:1pc;
+          }
+         
+        }
