@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <!-- //Bootstrap CSS JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- //Bootstrap Jquery Popper.JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" type="text/css" href="mediaquerytour.css">
+        <style>
+        /* ************************************************commmon*****************************************************************************/
+            body{
+                overflow-x:hidden;
+            }
+            .openbutton{
+                color:black;
+                background-color: white;
+                font-weight: bolder;
+                font-size:40px;
+                text-decoration: none;
+                border: none;
+            }
+            .openbutton:hover{
+                /* opacity: 0.1; */
+                cursor: pointer;
+                background-color: rgb(34, 33, 33);
+                color:white;
+            }
+            .slidepanel{
+               background-color:yellowgreen;
+               color:black;
+               font-size:20px;
+               font-size: bolder;
+               width: 0;
+              position: fixed;
+              z-index: 1;
+              height: 450px;
+              top: 0;
+              left: 0;
+              padding-top: 60px;
+              overflow-x: hidden;
+              transition: 0.5s;
+            }
+            .slidepanel a {
+                padding: 8px 8px 8px 32px;
+                color:black;
+                display: block;
+                transition: 0.5s;
+                font-family: cursive;
+            }
+            .slidepanel a:hover{
+                background-color: whitesmoke;
+                color:yellowgreen;
+                cursor: pointer;
+                text-decoration: none;
+            }
+             .closebutton{
+                position:absolute;
+                top: 0;
+                right:20px;
+                font-size:26px;
+                color:black;
+            }
+            .getintouch{
+                border:2px solid yellowgreen;
+                width:250px;
+                text-decoration: none;
+                margin-left:300px;
+                padding:20px;
+                font-weight:bolder;
+                font-family: sans-serif;
+                cursor: pointer;
+                background-color: white; 
+            }
+            .getintouch:hover{
+                opacity:0.5;
+            }
+            #logo{
+                margin-left:35%;
+                
+            }
+            .menuhead{
+                /* padding-left:5%; */
+                padding-top:25px;
+            }
+            .footer{
+                max-width:100%;
+                background-color:rgb(73, 87, 48);
+                padding-left: 5%;
+                /* margin-top:60%; */
+            }
+        /*************************************************commmon*****************************************************************************/
+            .titletext{
+                position: absolute;
+                padding-left: 10%;
+                top:35%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .paradise p{
+                color:grey;
+            }
+            .boatcontent{
+                position:absolute;
+                width:600px;
+                text-align: center;
+                font-size: 60px;
+                top:1750px;
+                color:whitesmoke;
+            }
+            .videoyoutube{
+                position: absolute;
+                top:2500px;
+                padding-left: 500px;
+                overflow: hidden;
+            }
+            .welcomecontent{
+                width:600px; 
+                position: absolute;
+                top:2600px;
+                background-color: white;
+                margin-left:100px;
+                padding:2%;
+            }
+            #knowmorebutton{
+                background-color: yellowgreen;
+                border:2px solid yellowgreen;
+                color: white;
+                width:200px;
+                height:50px;
+            }
+            .check{
+                margin-left:12pc;background-color:white;padding:4%;cursor:pointer;color:green;border:1px solid yellowgreen;
+                width:230px;
+            }
+            .calendar{
+                max-width:100%;
+            }
+        </style>
+    </head>
+    <body>
+    <!-------------------------------------------------------header--------------------------------------------------------->
+      <div class="container-fluid">
+        <div class="menuhead">
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="openbutton" onclick="Openbutton()">☰</button>
+                    <div id="MySlidePanel" class="slidepanel">
+                      <a  href="javascript:void(0)" class="closebutton" onclick="Closebutton()">X</a>
+                      <a  href="HomePage.html">HomePage</a>
+                      <a  href="DestinationPage.html">DestinationPage</a>
+                      <a  href="PrivateToursPage.html">PrivateToursPage</a>
+                      <a  href="SingleTourPage.html">SingleTourPage</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img  id="logo" src="Logo.PNG" alt="Logo" width="300px">
+                </div>
+                <div class="col-md-6">
+                    <button onclick="getDetails()"class="getintouch"><i class='fas fa-phone text-success' style='font-size:26px'></i> &nbsp;GET IN TOUCH</button>
+                </div>
+            </div>
+        </div>
+        <script>
+          function Openbutton(){
+              document.getElementById("MySlidePanel").style.width="250px";
+          }
+          function Closebutton(){
+              document.getElementById("MySlidePanel").style.width="0";
+          }
+        </script>
+        <br><br>
+ <!-------------------------------------------------------header--------------------------------------------------------->    
+                    <!-- <br><br><h1 style="text-align:center">THIS IS A DESTINATION PAGE</h1>  -->
+        <div class="title">
+            <img src="Travel1.jpg" width="100%" height="400px">
+            <div class="titletext">
+                <h2>ONE LAND-MANY FACES</h2>
+                <h1>Hisponiola</h1>
+            </div>
+        </div><br><br>
+        <div class=" paradise text-center"><br>
+            <h1 style="color:rgb(73, 87, 48);">Caribbean Paradise</h1><br>
+            <p>Hispaniola is the 22nd-largest island in the world,located in the Caribbean island group,the Greater<br>
+            Antilies.It is the second largest island in the Caribbean after Cuba, and the tenth most populous island in the world.</p><br>
+            <p>Hispaniola is the site of the first permanent European settlement in the Americas,founded by Christopher<br> Columbus on the voyages in 1492 and 1493.</p>
+        </div><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="Destination1.jpg" width="100%" height="300">
+            </div>
+            <div class="col-md-4">
+                <img src="Destination2.jpg" width="100%" height="300" >
+            </div>
+            <div class="col-md-4">
+                <img src="Destination3.jpg" width="100%" height="300">
+            </div>
+        </div><br>
+        <div class=" geography bg-light">
+            <div class="row">
+                <div class="col-lg-6"><br>
+                   <h2>Geography</h2><br>
+                   <p >Hispaniola is the secong largest island of the West Indies,with an area of about 76,129km&sqcap;.The
+                     name given to the island was Columbus.Hispaniola means "small Spain".The Tainos called the island "Quisqueya",Mother Earth. 
+                   </p>
+                   <p>From a geological point of view,the island of Hispaniola is part of two branches of the North American cordillera system and is about
+                       660km long,250km wide and extends west-eaternly.In the west,the island of Hispaniola is seperated by the approximately 90 km  wide Windward
+                       Passage of Puerto Rice,which is upto 110 km wide.
+                   </p>
+                   <p>Hispaniola is the secong largest island of the West Indies,with an area of about 76,129km&sqcap;.The
+                    name given to the island was Columbus.Hispaniola means "small Spain".The Tainos called the island "Quisqueya",Mother Earth. 
+                  </p>
+                  <p>
+                      It offers four vegetation zones and  five climate zones.More than  5,000 plant species,many of them endemic,make the island a paradise for nature lovers. The animal world is also covincing,although it is not possible  to affect large animals except for a few species.
+                      For this.the bird word is represented even more arsenically.
+                  </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="Mapisland.PNG" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class=" boat">
+            <img src="Boat.jpg" width="100%" height="400px">
+            <div class="container boatcontent">
+                <h2>The varied climate,geography,as well as plants and fauna found in the country should not only attract you visit,but invite you to explore.</h2>
+            </div>
+        </div><br>
+        <div class=" details" style="padding-left: 5%;font-weight: bold;"><br><br>
+            <div class="row" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <div class="col-md-5" style="color:grey">
+                    <h2>History</h2><br>
+                    <p>The island of Hispaniola(La Isla Espanola) was the first colony in the New World settled by Spain.</p>
+                    <p>As such,it served as the logistical base for the conquest of most of the Western Hemisphere.Christopher Columbus first sighted the island in 1492 toward the end of his first Voyage to the "Indies".</p>
+                </div>
+                <div class="col-md-5" style="color:grey">
+                    <p>For two centuries the Spanish ruled the island until western Hispaniola(present-day Haiti) came under French control in 1697.
+                        The east still remained under Spanish control.This created a division that still exists today,with the Domician Republic and Haiti sharing the island.
+                    </p>
+                    <p>Finally, and after decades  of unstable political situations,on 27 February 1844,the territory of Santo Domingo recovered its sovereignity and declared its independence as the Dominic Republic.</p>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="WelcomeSouthWest">
+            <img src="Travel.jpg" width="100%">
+            <div class="videocontent">
+              <div class="videoyoutube">
+                <img  src="beach1.jpg" width="80%" height="500">
+              </div>
+              <div class="welcomecontent">
+                    <h2 class="text-success">What to see an what to do!</h2>
+                    <p>Wild mountain streams,hidden caves and dreamy waterfalls can visited
+                        on guided tours in the mountains.Walks though mountain forests,biking at the beaches and safaris
+                        for bird and bird watching are just few reccomendations.
+                    </p><br>
+                    <p><strong>Discover the original southwest of the Domician Republic and Haiti with Ecotour Barahona.</strong>
+                    </p><br><br>
+                    <button id="knowmorebutton" onclick="getDetails()">SHOW ALL OUR TOURS</button>
+              </div>
+            </div>
+        </div>
+        <div class="calendar text-white" style="background-color: yellowgreen;" width="1380px" height="600px"><br><br>
+            <div class="row" id="cal">
+              <div class="col-sm-1"><i style='font-size:60px;margin-left: 250px;background-color: yellowgreen;' class='far text-white'>&#xf073;</i>
+              </div>
+              <div class="col-sm-5"> <h2 style="font-size:50px;margin-left:200px">BOOK NOW</h2>
+                  <h4 style="font-size:18px;margin-left:220px;color:green"> loreum ispum dolor sit</h4>
+              </div>
+              <div class="col-lg-6">
+                  <button class="check" onclick="getDetails()">CHECK DATES</button>
+              </div>
+              </div><br><br>
+          </div>             
+<!----footerpage----------------------------------------------------------------------------------------------------->
+        <div class="footer text-white"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="Logomini.PNG" width="200px">
+                    <p class="font-weight-smaller">Ecotour Barahona is your favourite specialist for authentic,unique and memorable round tips,day trips and activities in Southwest of Domician Republic.</p><br>
+                    <img src="Dominic Republic.PNG" width="200px">
+                    <p>Travel environmentally friendly with us and discover the main destinations of the  main destinations of the Dominician Republic.</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">ABOUT US</strong><br><br>
+                    <p>ABOUT ECOTOUR</p>
+                    <p>BARAHOMA</p>
+                    <p>OUR TEAM</p>
+                    <p>GUEST BOOK</p>
+                </div>
+                <div class="col-md-3">
+                    <strong style="color:yellowgreen;font-size:16px">CUSTOMER SERVICE</strong><br><br>
+                    <p>BOOKINGS CONDITIONS</p>
+                    <p>CONTACT-US</p>
+                    <p>FAQ's</p>
+                    <p>LEGAL NOICE</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">RESERVATIONS & BOOKINGS</strong><br><br>
+                    <p class="font-size-small">MONDAY TO FRIDAY</p>
+                    <p class="font-size-small">From 8.00am to 8.00pm</p>
+                    <p class="font-size-small">SATURDAY TO SUNDAY</p>
+                    <p class="font-size-small">From 9.00am to 5.00 pm</p>
+                    <p class="font-size-small">Atlantic Standard Time</p>
+                    <p>+1 (809) 856 2260</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">FOLLOW US</strong><br><br>
+                    <i class='fab fa-facebook-f text-white' style='font-size:20px'></i>
+                    <i class='fab fa-instagram text-white' style='font-size:20px'></i>
+                    <i class='fab fa-weebly text-white' style='font-size:20px'></i>
+                </div>
+            </div><br><br>
+            <div class="endtext text-center font-weight-large text-white">
+                    <h4>DESIGN &copy; AKSHAYA DEVI MAHESWARAN</h4>
+            </div>
+        </div>
+     </div>
+     <script>
+         function getDetails(){
+             alert("For more details comtact :info@tour.com");
+         }
+     </script>
+<!----footerpage----------------------------------------------------------------------------------------------------->
+  </body>
+</html>

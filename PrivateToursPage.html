@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <!-- //Bootstrap CSS JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- //Bootstrap Jquery Popper.JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" type="text/css" href="mediaquerytour.css">
+        <style>
+        /* ************************************************commmon*****************************************************************************/
+            .openbutton{
+                color:black;
+                background-color: white;
+                font-weight: bolder;
+                font-size:40px;
+                text-decoration: none;
+                border: none;
+            }
+            .openbutton:hover{
+                /* opacity: 0.1; */
+                cursor: pointer;
+                background-color: rgb(34, 33, 33);
+                color:white;
+            }
+            .slidepanel{
+               background-color:yellowgreen;
+               color:black;
+               font-size:20px;
+               font-size: bolder;
+               width: 0;
+              position: fixed;
+              z-index: 1;
+              height: 450px;
+              top: 0;
+              left: 0;
+              padding-top: 60px;
+              overflow-x: hidden;
+              transition: 0.5s;
+            }
+            .slidepanel a {
+                padding: 8px 8px 8px 32px;
+                color:black;
+                display: block;
+                transition: 0.5s;
+                font-family: cursive;
+            }
+            .slidepanel a:hover{
+                background-color: whitesmoke;
+                color:yellowgreen;
+                cursor: pointer;
+                text-decoration: none;
+            }
+             .closebutton{
+                position:absolute;
+                top: 0;
+                right:20px;
+                font-size:26px;
+                color:black;
+            }
+            .getintouch{
+                border:2px solid yellowgreen;
+                width:250px;
+                background-color: white;
+                text-decoration: none;
+                margin-left:300px;
+                padding:20px;
+                font-weight:bolder;
+                font-family: sans-serif;
+                cursor: pointer;  
+            }
+            .getintouch:hover{
+                opacity:0.5;
+            }
+            #logo{
+                margin-left:35%;
+                
+            }
+            .menuhead{
+                padding-left:5%;
+                padding-top:25px;
+            }
+            .footer{
+                width:1365px;
+                background-color:rgb(73, 87, 48);
+                padding-left: 5%;
+                /* margin-top:60%; */
+            }
+            .surftext{
+                position: absolute;
+                top:200px;
+                padding-left:200px;
+            }
+            .f1:hover,.f2:hover,.f3:hover{
+                opacity: 0.2;
+            }
+            .images{
+                margin-left: 200px;
+            }
+            #content1{
+                position: absolute;
+                top:2200px;
+                width:400px;
+                margin-left:250px;
+                font-size: 18px;
+                font-weight: bolder;
+                color:white;
+            }
+            #content2{
+                position: absolute;
+                top:2250px;
+                width:400px;
+                margin-left:750px;
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+                
+            }
+            #content3{
+                position: absolute;
+                top:2250px;
+                width:400px;
+                margin-left:980px;
+                font-size: 18px;
+                font-weight: bolder;
+                color:white;  
+            }
+            #content4{
+                position: absolute;
+                top:2560px;
+                width:400px;
+                margin-left:250px;
+                font-size: 18px;
+                font-weight: bolder;
+                color:white;
+            }
+            #content5{
+                position: absolute;
+                top:2560px;
+                width:400px;
+                margin-left:460px;
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+                
+            }
+            #content6{
+                position: absolute;
+                top:2560px;
+                width:400px;
+                margin-left:750px;
+                font-size: 18px;
+                font-weight: bolder;
+                color:white;  
+            }
+            .check{
+                margin-left:12pc;background-color:white;padding:4%;cursor:pointer;color:green;border:1px solid yellowgreen;
+                width:230px;
+            }
+            .calendar{
+                width:1365px;
+            }
+        /*************************************************commmon*****************************************************************************/
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+    <!-------------------------------------------------------header--------------------------------------------------------->
+        <div class="menuhead">
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="openbutton" onclick="Openbutton()">☰</button>
+                    <div id="MySlidePanel" class="slidepanel">
+                      <a  href="javascript:void(0)" class="closebutton" onclick="Closebutton()">X</a>
+                      <a  href="HomePage.html">HomePage</a>
+                      <a  href="DestinationPage.html">DestinationPage</a>
+                      <a  href="PrivateToursPage.html">PrivateToursPage</a>
+                      <a  href="SingleTourPage.html">SingleTourPage</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img  id="logo" src="Logo.PNG" alt="Logo" width="300px">
+                </div>
+                <div class="col-md-6">
+                    <button class="getintouch"><i class='fas fa-phone text-success' style='font-size:26px'></i> &nbsp;GET IN TOUCH</button>
+                </div>
+            </div>
+        </div><br>
+        <script>
+          function Openbutton(){
+              document.getElementById("MySlidePanel").style.width="250px";
+          }
+          function Closebutton(){
+              document.getElementById("MySlidePanel").style.width="0";
+          }
+        </script>
+ <!-------------------------------------------------------header--------------------------------------------------------->    
+                    <!-- <br><br><h1 style="text-align:center">THIS IS A PRIVATE TOURS PAGE</h1>  -->
+                   
+        <div class="surfpic">
+            <img src="SurfingWalpaper.jpg" width="100%" height="450">
+            <div class="surftext text-light">
+                <h4 style="font-weight: bolder;font-size:40px">RECEIVE VIP TREATMENT</h4>
+                <h1  style="font-weight: bolder;font-size:70px">Private Trips</h1>
+            </div>
+        </div>
+        <div class="privitization text-center"><br><br><br>
+           <h1 style="color:rgb(73, 87, 48)">Privatize Any of Our Daytrips</h1><br>
+           <p style="color:rgb(73, 87, 48);width:800px;margin-left: 20%;">Loreum ipsum dolor sit amet,fierent scriptoreum eu cum,
+                et debet habemus vel.Wisi vitae ea ius,in quo vocibus splendide. Aliquid vituperata sit ei,vero wisi commodo name et.
+                No mea sentitae consequuntur, suas mucius denique in usu.Ius eu epicuri definiebas.</p>
+        </div><br><br><br>
+        <div class="row text-white"style="margin-left: 12%;">
+            <div class="col-md-5" style="background-color:yellowgreen;width:800px">
+                <h2>Tailor Made Trips</h2><br>
+                <p>Loreum ipsum dolor sit amet,fierent scriptoreum eu cum,
+                    et debet habemus vel.Wisi vitae ea ius,in quo vocibus splendide. Aliquid vituperata sit ei,vero wisi commodo name et.
+                    No mea sentitae consequuntur, suas mucius denique in usu.Ius eu epicuri definiebas.
+                </p>
+            </div>
+            <div class="col-md-5" style="background-color:rgb(73, 87, 48);width:800px">
+                <h2>Tailor Made Trips</h2><br>
+                <p>Loreum ipsum dolor sit amet,fierent scriptoreum eu cum,
+                    et debet habemus vel.Wisi vitae ea ius,in quo vocibus splendide. Aliquid vituperata sit ei,vero wisi commodo name et.
+                    No mea sentitae consequuntur, suas mucius denique in usu.Ius eu epicuri definiebas.
+                </p>
+            </div>
+        </div><br><br><br>
+        <div class="started text-white">
+            <div class="startimg">
+                <img src="beach2.jpg" width="100%" height="600">
+            </div>
+            <h2 style="position: absolute;top:73pc;margin-left: 38%;font-size: 45px;">Let`s Get Started</h2><br><br>
+            <div class="startcontent text-white" style="background-color:rgba(7, 17, 17, 0.8);position: absolute;top:82pc;margin-left: 20%;font-size: 55px;padding:4%">
+                <div class="row text-center">
+                    <div class="col-md-4 f1">
+                        <i style="font-size:64px;cursor: pointer;" class="fa">&#xf002;</i><br><br>
+                        <h5>Select your travel experience</h5>
+                    </div>
+                    <div class="col-md-4 f2">
+                        <i style="font-size:64px;cursor: pointer;" class="fa">&#xf25a;</i><br><br>
+                        <h5>Choose a departure date</h5>
+                    </div>
+                    <div class="col-md-4 f3">
+                        <i style='font-size:64px;cursor: pointer;' class='fas'>&#xf3cd;</i><br><br>
+                        <h5>Call us to book your trip</h5>
+                    </div>
+                </div>
+                <button class="buttonstarted" style="position: absolute;top:300px;margin-left:35%;font-size:20px;background-color: yellowgreen;color:white;border:2px solid yellowgreen">GET STARTED!</button>
+            </div>
+        </div>
+        <div class="contentment text-center"><br><br>
+            <h1>Get Inspired</h1><br>
+            <p style="color:grey;width:800px;margin-left: 20%;">What kind of unique excursion do you have in mind?<br>
+                We can always be reached for particular requirements and take care of additional arrangements for you.
+            <p>
+        </div><br>
+    <div class="images">
+        <img src="nature2.jpg" width="500" height="300">
+        <img src="horserid2.jpg"  width="250" height="300"> 
+        <img src="nature4.jpg"  width="250" height="300"><br>
+        <img src="beach1.jpg"  width="250" height="300">
+        <img src="nature6.jpg"  width="250" height="300">
+        <img src="Travel.jpg"  width="500" height="300">
+    </div><br><br>
+    <div id="content1">
+       <p><strong>Loreum ipsum dolor sit </strong></p>
+       <p><i style="font-family: cursive;">Loreum ipsum dolor sit amet,fierent scriptoreum eu cum,
+        et debet habemus vel.</i></p>
+    </div>
+    <div id="content2">
+        <p><strong>Dolor sit amet</strong></p>
+    </div>
+    <div id="content3">
+        <p><strong>Loreum ipsum dolor sit </strong></p>
+    </div>
+    <div id="content4">
+        <p><strong>Dolor sit amet</strong></p>
+    </div>
+    <div id="content5">
+        <p><strong>Loreum ipsum </strong></p>
+    </div>
+    <div id="content6">
+        <p><strong>Loreum ipsum dolor</strong></p>
+    </div>
+    <div class="calendar text-white" style="background-color: yellowgreen;" width="1380px" height="600px"><br><br>
+        <div class="row">
+          <div class="col-sm-1"><i style='font-size:60px;margin-left: 250px;background-color: yellowgreen;' class='far text-white'>&#xf073;</i>
+          </div>
+          <div class="col-sm-5"> <h2 style="font-size:50px;margin-left:200px">BOOK NOW</h2>
+              <h4 style="font-size:18px;margin-left:220px;color:green"> loreum ispum dolor sit</h4>
+          </div>
+          <div class="col-lg-6">
+              <button class="check">CHECK DATES</button>
+          </div>
+          </div><br><br>
+      </div>
+    
+                  
+<!----footerpage----------------------------------------------------------------------------------------------------->
+        <div class="footer text-white" width="100%"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="Logomini.PNG" width="200px">
+                    <p class="font-weight-smaller">Ecotour Barahona is your favourite specialist for authentic,unique and memorable round tips,day trips and activities in Southwest of Domician Republic.</p><br>
+                    <img src="Dominic Republic.PNG" width="200px">
+                    <p>Travel environmentally friendly with us and discover the main destinations of the  main destinations of the Dominician Republic.</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">ABOUT US</strong><br><br>
+                    <p>ABOUT ECOTOUR</p>
+                    <p>BARAHOMA</p>
+                    <p>OUR TEAM</p>
+                    <p>GUEST BOOK</p>
+                </div>
+                <div class="col-md-3">
+                    <strong style="color:yellowgreen;font-size:16px">CUSTOMER SERVICE</strong><br><br>
+                    <p>BOOKINGS CONDITIONS</p>
+                    <p>CONTACT-US</p>
+                    <p>FAQ's</p>
+                    <p>LEGAL NOICE</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">RESERVATIONS & BOOKINGS</strong><br><br>
+                    <p class="font-size-small">MONDAY TO FRIDAY</p>
+                    <p class="font-size-small">From 8.00am to 8.00pm</p>
+                    <p class="font-size-small">SATURDAY TO SUNDAY</p>
+                    <p class="font-size-small">From 9.00am to 5.00 pm</p>
+                    <p class="font-size-small">Atlantic Standard Time</p>
+                    <p>+1 (809) 856 2260</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">FOLLOW US</strong><br><br>
+                    <i class='fab fa-facebook-f text-white' style='font-size:20px'></i>
+                    <i class='fab fa-instagram text-white' style='font-size:20px'></i>
+                    <i class='fab fa-weebly text-white' style='font-size:20px'></i>
+                </div>
+            </div><br><br>
+            <div class="endtext text-center font-weight-large text-white">
+                    <h4>DESIGN &copy; AKSHAYA DEVI MAHESWARAN</h4>
+            </div>
+        </div>
+    </div>
+<!----footerpage----------------------------------------------------------------------------------------------------->
+    </body>
+</html>

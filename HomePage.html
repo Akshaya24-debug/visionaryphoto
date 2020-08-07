@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+        <!-- //Bootstrap CSS JS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- //Bootstrap Jquery Popper.JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" type="text/css" href="mediaquerytour.css">
+        
+        <style>
+            .openbutton{
+                color:black;
+                background-color: white;
+                font-weight: bolder;
+                font-size:40px;
+                text-decoration: none;
+                border: none;
+            }
+            .openbutton:hover{
+                /* opacity: 0.1; */
+                cursor: pointer;
+                background-color: rgb(34, 33, 33);
+                color:white;
+            }
+            .slidepanel{
+               background-color:yellowgreen;
+               color:black;
+               font-size:20px;
+               font-size: bolder;
+               width: 0;
+              position: fixed;
+              z-index: 1;
+              height: 450px;
+              top: 0;
+              left: 0;
+              padding-top: 60px;
+              overflow-x: hidden;
+              transition: 0.5s;
+            }
+            .slidepanel a {
+                padding: 8px 8px 8px 32px;
+                color:black;
+                display: block;
+                transition: 0.5s;
+                font-family: cursive;
+            }
+            .slidepanel a:hover{
+                background-color: whitesmoke;
+                color:yellowgreen;
+                cursor: pointer;
+                text-decoration: none;
+            }
+             .closebutton{
+                position:absolute;
+                top: 0;
+                right:20px;
+                font-size:26px;
+                color:black;
+            }
+            .getintouch{
+                border:2px solid yellowgreen;
+                width:250px;
+                background-color: white;
+                text-decoration: none;
+                margin-left:300px;
+                padding:20px;
+                font-weight:bolder;
+                font-family: sans-serif;
+                cursor: pointer;
+                
+            }
+            .getintouch:hover{
+                opacity:0.5;
+            }
+            #logo{
+                margin-left:35%;
+                
+            }
+            .menuhead{
+                padding-left:5%;
+                padding-top:25px;
+            }
+            .footer{
+                width:1365px;
+                background-color:rgb(73, 87, 48);
+                padding-left: 5%;  
+            }
+            .calendar{
+                width:1365px;
+            }
+        /*************************************************commmon*****************************************************************************/
+            .buttonbook{
+                background-color: yellowgreen;
+                border: 2px solid yellowgreen;
+                color:white;
+                padding:1%;
+                width:150px;
+            }
+            .buttonbook:hover{
+                opacity: 0.8;
+                color:black;
+                cursor: pointer;
+            }
+            .homecontent{
+                position: absolute;
+                top:70%;
+                width:800px;
+                padding-left: 205px;
+            }
+            #knowmorebutton:hover, .tourimage:hover{
+                cursor: pointer;
+                box-shadow: cornsilk;
+                opacity: 0.7;
+            }
+            /* .videocontent{
+                position: absolute;
+            } */
+            .videoyoutube{
+                position: absolute;
+                top:1400px;
+                padding-left: 500px;
+                overflow: hidden;
+            }
+            .welcomecontent{
+                width:500px;
+                position: absolute;
+                top:1500px;
+                background-color: white;
+                margin-left:100px;
+                padding:2%;
+            }
+            #knowmorebutton{
+                background-color: yellowgreen;
+                border:2px solid yellowgreen;
+                color: white;
+                width:150px;
+                height:50px;
+                margin-left:320px;
+                position: absolute;
+                top:355px;
+                left:30px;
+            }
+
+            .check{
+                margin-left:12pc;background-color:white;padding:4%;cursor:pointer;color:green;border:1px solid yellowgreen;
+                width:230px;
+            }
+             .choicetext{
+                 position: absolute;
+                 top:3600px;
+                 text-align: center;
+                 padding-left: 25%;
+             }
+             .choicecontent{
+                 position: absolute;
+                 top:3680px;
+                 background-color:rgba(7, 17, 17, 0.8);
+                 color:white;
+                 width:800px;
+                 margin-left: 300px;
+             }
+             .choicecontent:hover{
+                 cursor: pointer;
+                 background-color: rgb(80, 67, 67);
+             }
+            .anchor{
+                text-align: center;
+                font-size: 50px;
+                text-decoration: none;
+                font-family: cursive;
+                color:yellowgreen;
+            }
+            .anchor:hover{
+                text-decoration: none;
+                color:green;
+            }
+        .imgsec{
+            position: relative;
+        }
+        .img{
+           padding:5%;
+           color:white;
+        }
+       #i1,#i3,#i5{
+           position: absolute;
+       }
+       #i2{
+           margin-left: 400px;
+       }
+       #i4{
+           position: absolute;
+           top:430px;
+       }
+       #i5{
+           position: absolute;
+           top:430px;
+           margin-left: 800px;
+       }
+       #i6{
+           position: absolute;
+           top:830px;
+       } 
+       #i8{
+           position: absolute;
+           top:830px;
+          
+       }
+       #i7{
+           margin-left: 400px;
+           margin-top: 0px;
+       }
+       .content1{
+            position: absolute;
+            top:25%;
+       }
+       .content4{
+            position: absolute;
+            top:28%;
+            margin-top: 200px;
+            margin-left: 400px;
+       }
+       .content2{
+           position: absolute;
+           top:700px;
+       }
+       .content5{
+           position: absolute;
+           top:1100px;
+           margin-left: 400px;    
+       }
+       .content3{
+        position: absolute;
+        top:1100px;
+       }
+       .content6{
+        position: absolute;
+        top:25%;
+        margin-left: 800px;
+       }
+       .content7{
+        position: absolute;
+        top:700px;
+        margin-left:800px; 
+       }
+       .content8{
+        position: absolute;
+        top:1100px;
+        margin-left: 800px;
+       }
+       
+       .img1:hover,.content1:hover,.content2:hover,.content3:hover,.content4:hover,.content5:hover,.content6:hover,.content7:hover,.content8:hover{
+           cursor: pointer;
+           opacity:0.5;
+       }
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <div class="menuhead">
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="openbutton" onclick="Openbutton()">☰</button>
+                    <div id="MySlidePanel" class="slidepanel">
+                      <a  href="javascript:void(0)" class="closebutton" onclick="Closebutton()">X</a>
+                      <a  href="HomePage.html">HomePage</a>
+                      <a  href="DestinationPage.html">DestinationPage</a>
+                      <a  href="PrivateToursPage.html">PrivateToursPage</a>
+                      <a  href="SingleTourPage.html">SingleTourPage</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img  id="logo" src="Logo.PNG" alt="Logo" width="300px">
+                </div>
+                <div class="col-md-6">
+                    <button class="getintouch"><i class='fas fa-phone text-success' style='font-size:26px'></i> &nbsp;GET IN TOUCH</button>
+                </div>
+            </div>
+        </div><br><br>
+        <script>
+          function Openbutton(){
+              document.getElementById("MySlidePanel").style.width="250px";
+          }
+          function Closebutton(){
+              document.getElementById("MySlidePanel").style.width="0";
+          }
+        </script>
+
+        <div class="home ">
+            <img src="beach2.jpg" width="100%">
+        </div>
+        <div class="homecontent text-white">
+            <h5 style="font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bold;font-size: 30px;">DISCOVER A HIDDEN PARADISE</h5><br>
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bold;font-size: 40px;">Deep South West,Dominican Republic</h1><br>
+            <button class="buttonbook">BOOK NOW</button>
+        </div><br><br>
+        <div class="tourimage">
+            <img src="Tourtypes.PNG" style="padding-left: 18%;">
+        </div><br><br>
+        <div class="WelcomeSouthWest">
+            <img src="beach1.jpg" width="1365">
+            <div class="videocontent">
+              <div class="videoyoutube">
+                <iframe  src="https://www.youtube.com/embed/q6yAXy5X58k?autoplay=0" width="820" height="555">
+                </iframe>
+              </div>
+              <div class="welcomecontent">
+                    <h1 class="text-success">Welcome to the Deep<br>Southwest</h1>
+                    <p><strong class="font-size-small">Discover with EcoTour Barahoma,your specialist in
+                        Ecotourism a new face of the Dominican Republic,more human,more authentic!
+                    </strong></p><br>
+                    <p>We have artistically designed unique excursions for you,
+                        accompanied by professional and passionate local guides 
+                        who will show you the best of this part of the country.
+                    </p><br><br>
+                    <button id="knowmorebutton">KNOW MORE</button>
+              </div>
+            </div>
+        </div><br><br>
+        <div class="imgsec">
+            <h1 class="text-center">Featured Travel Experiences</h1><br>
+            <div class="img">
+                <img src="nature1.jpg" width="400" height="400" id="i1" class="img1">
+                <img src="nature2.jpg" width="400" height="600" id="i2" class="img1">
+                <img src="nature3.jpg" width="400" height="400" id="i3" class="img1"><br>
+                <img src="nature4.jpg" width="400" height="400" id="i4" class="img1">
+                <img src="nature5.jpg" width="400" height="400" id="i5" class="img1">
+                <img src="nature6.jpg" width="400" height="400" id="i6" class="img1">
+                <img src="nature7.jpg" width="400" height="483" id="i7"class="img1">
+                <img src="nature8.png" width="400" height="400" id="i8" class="img1"> 
+    
+                <div class="content1">
+                    <h2 style="font-size: 40px;">Feel the Bliss</h2>
+                    <p><strong>per adult(Departure:Barahona)</strong></p>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content2">
+                    <h2 style="font-size: 40px;">Falls Falleninto</h2>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                    </div>
+                <div class="content3">
+                        <h2 style="font-size: 40px;">Vanity Part</h2>
+                        <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content4">
+                    <h2 style="font-size: 40px;">Garden of Eden</h2>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content5">
+                    <h2 style="font-size: 40px;">Guitar Vlog</h2>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content6">
+                    <h2 style="font-size: 40px;">Trikking Miles</h2>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content7">
+                    <h2 style="font-size: 40px;">Vlog Indoor</h2>
+                    <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+                <div class="content8">
+                        <h2 style="font-size: 40px;">Musical Vlog</h2>
+                        <button style="background-color: yellowgreen;color:white;border:1px solid yellowgreen;font-size: 20px;">$55</button>
+                </div>
+            </div>
+        </div><br>
+        <div class="choices text-center"><br><br>
+            <img src="beach3.jpg" width="100%">
+            <div class="choicetext">
+                <h2 class="text-light font-size-larger" style="font-size: 40px;">Why book with EcoTour Barahona?</h2>
+            </div>
+            <div class="choicecontent"><br>
+                <div class="row">
+                    <div class="col-md-3 " style="margin-left: 100px;">
+                        <h1><i class='fas'>&#xf5c4;</i></h1><br>
+                        <p>Our days trips not only allow you to visit the Southwest,but also to experience it.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1><i  class='fas'>&#xf072;</i></h1><br>
+                        <p>They are guided by professional and passionate Dominicians and show you the best and unexpected sides of the Dominican Republic.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1><i  class='fas'>&#xf559;</i></h1><br>
+                        <p>Benefit from small group sizes and guaranteed weekly departures.</p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="opinions"style="padding-left:17%;margin-top:100px" style="max-width:100%">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1 class="font-weight-larger text-success">Lorem ipsum, dolor sit amet</h1><br>
+                    <button style="background-color: yellowgreen;border:2px solid yellowgreen;color:white;cursor: pointer;width:150px;height: 50px;">SEE ALL OPINIONS</button>
+                </div>
+                <div class="col-lg-8">
+                    <img src="passport.jpg" width="100px" style="border-radius:50%;margin-left: 100px;"><br><br>
+                    <h6 class="font-weight-bold"style="margin-left:100px">LUCIA JOHNSON</h6><br>
+                    <p><i style='font-size:48px' class='fas'>&#xf10e;</i><strong style="margin-left:50px">A ros sodales proin pretium nulla a arcu molestie</strong></p><br>
+                    <p style="margin-left:100px">A Proin ullamcorper iusto risus sodales vulputate magna <br>ullamcorper ut morbi venaincis.</p>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="calendar text-white" style="background-color: yellowgreen;max-width:100%"  height="600px"><br><br>
+            <div class="row"><br><br>
+              <div class="col-sm-1"><i style='font-size:60px;margin-left: 250px;background-color: yellowgreen;' class='far text-white'>&#xf073;</i>
+              </div>
+              <div class="col-sm-5"> <h2 style="font-size:50px;margin-left:200px">BOOK NOW</h2>
+                  <h4 style="font-size:18px;margin-left:220px;color:green"> loreum ispum dolor sit</h4>
+              </div>
+              <div class="col-lg-6">
+                  <button class="check">CHECK DATES</button>
+              </div>
+              </div><br><br>
+          </div><br>
+          <div class="footer text-white" style="max-width:100%"><br>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="Logomini.PNG" width="200px">
+                    <p class="font-weight-smaller">Ecotour Barahona is your favourite specialist for authentic,unique and memorable round tips,day trips and activities in Southwest of Domician Republic.</p><br>
+                    <img src="Dominic Republic.PNG" width="200px">
+                    <p>Travel environmentally friendly with us and discover the main destinations of the  main destinations of the Dominician Republic.</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">ABOUT US</strong><br><br>
+                    <p>ABOUT ECOTOUR</p>
+                    <p>BARAHOMA</p>
+                    <p>OUR TEAM</p>
+                    <p>GUEST BOOK</p>
+                </div>
+                <div class="col-md-3">
+                    <strong style="color:yellowgreen;font-size:16px">CUSTOMER SERVICE</strong><br><br>
+                    <p>BOOKINGS CONDITIONS</p>
+                    <p>CONTACT-US</p>
+                    <p>FAQ's</p>
+                    <p>LEGAL NOICE</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">RESERVATIONS & BOOKINGS</strong><br><br>
+                    <p class="font-size-small">MONDAY TO FRIDAY</p>
+                    <p class="font-size-small">From 8.00am to 8.00pm</p>
+                    <p class="font-size-small">SATURDAY TO SUNDAY</p>
+                    <p class="font-size-small">From 9.00am to 5.00 pm</p>
+                    <p class="font-size-small">Atlantic Standard Time</p>
+                    <p>+1 (809) 856 2260</p>
+                </div>
+                <div class="col-md-2">
+                    <strong style="color:yellowgreen;font-size:16px">FOLLOW US</strong><br><br>
+                    <i class='fab fa-facebook-f text-white' style='font-size:20px'></i>
+                    <i class='fab fa-instagram text-white' style='font-size:20px'></i>
+                    <i class='fab fa-weebly text-white' style='font-size:20px'></i>
+                </div>
+            </div><br><br>
+            <div class="endtext text-center font-weight-large text-white">
+                    <h4>DESIGN &copy; AKSHAYA DEVI MAHESWARAN</h4>
+            </div>
+        </div>
+     </div>
+    </body>
+</html>
